@@ -1,0 +1,23 @@
+﻿<Window x:Class="MySnake.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" KeyDown="Window_KeyDown_1" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="46*"/>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="220*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border BorderBrush="Black" BorderThickness="5" HorizontalAlignment="Left" Height="260" Margin="41,28,0,0" VerticalAlignment="Top" Width="260" Grid.ColumnSpan="3">
+            <Canvas Name="GamePlace" HorizontalAlignment="Left" Height="250" VerticalAlignment="Top" Width="250">
+                <Rectangle Name="SnakeHead" Fill="Red" HorizontalAlignment="Left" Height="10" Stroke="Black" VerticalAlignment="Top" Width="10" Canvas.Left="0" Canvas.Bottom="0"/>
+            </Canvas>
+        </Border>
+        <Label Name="label1" Content="Label" HorizontalAlignment="Left" Margin="87,118,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+        <Button Name="btnStart" Content="Start" Grid.Column="2" HorizontalAlignment="Left" Margin="87,194,0,0" VerticalAlignment="Top" Width="75" Click="btnStart_Click"/>
+        <Button Name="btnPause" Content="Pause" Grid.Column="2" HorizontalAlignment="Left" Margin="87,230,0,0" VerticalAlignment="Top" Width="75" Click="btnPause_Click"/>
+        <Button Name="btnReset" Content="Reset" Grid.Column="2" HorizontalAlignment="Left" Margin="87,266,0,0" VerticalAlignment="Top" Width="75" Click="btnReset_Click"/>
+
+    </Grid>
+</Window>
