@@ -123,6 +123,7 @@ namespace MySnake
         }
         private void Directions(Key klawisz)
         {
+            
             var headPosition = GetHeadPosition(SnakeHead);
             if (klawisz == Key.Up)
             {
